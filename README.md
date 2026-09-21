@@ -8,12 +8,7 @@ denoising posterior $q(x_0 \mid x_t)$. Two identities are standard. The **Target
 Identity** (TSI) averages energy gradients and has high variance at high noise; the
 **Denoising Score Identity** (DSI) averages the posterior kernel score and has high variance at
 low noise. CVSI uses one as a control variate for the other, with a time-dependent coefficient
-that minimises the estimator's variance at every noise level:
-
-$$\mathrm{CVSI} = \big(1 - \tilde c(t)\big)\,\mathrm{TSI} + \tilde c(t)\,\mathrm{DSI}.$$
-
-$\tilde c^*(t)$ is estimated from the same samples as the score, so CVSI needs no extra energy
-evaluations. TSI, DSI and heuristic mixtures are special cases.
+that minimises the estimator's variance at every noise level.
 
 ## Contents
 
