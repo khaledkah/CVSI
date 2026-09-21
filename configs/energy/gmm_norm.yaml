@@ -1,0 +1,18 @@
+_target_: dem.energies.gmm_norm_energy.GMMNorm
+
+dimensionality: 2
+n_mixes: 40
+mean_scale: 100.0
+df_scale: 5.0
+
+device: ${trainer.accelerator}
+
+plot_samples_epoch_period: 1
+
+should_unnormalize: False
+data_normalization_factor: 1.0
+data_path_train: null
+
+train_set_size: 100000
+test_set_size: 5000
+val_set_size: 5000

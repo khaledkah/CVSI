@@ -1,0 +1,3 @@
+_target_: dem.models.components.noise_schedules.QuadraticNoiseSchedule
+beta: 1.0
+name: "quadratic_${.beta}"

@@ -1,0 +1,3 @@
+_target_: dem.models.components.noise_schedules.SubLinearNoiseSchedule
+beta: 1.0
+name: "sub_linear_${.beta}"
