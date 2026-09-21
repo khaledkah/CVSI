@@ -1,6 +1,6 @@
 # Control Variate Score Identity (CVSI)
 
-Code for *Control Variate Score Matching for Diffusion Models*.
+Code for [Control Variate Score Matching for Diffusion Models](https://arxiv.org/abs/2512.20003).
 
 Sampling from an unnormalized density $p(x) \propto e^{-E(x)}$ with a diffusion model requires
 the score $\nabla_x \log q_t(x)$, which is estimated by Monte Carlo from samples of the
@@ -91,3 +91,15 @@ CVSI options (in `configs/model/dem.yaml`, override as `model.<name>=<value>`):
 ## License
 
 MIT. See `LICENSE`, which also retains the license of the iDEM code this repository extends.
+
+## How to cite
+If you use CVSI in your research, please cite the corresponding publication:
+
+Kahouli, K., Elie, R., Müller, K. R., Berthet, Q., Unke, O. T., & Doucet, A. (2025). Control variate score matching for diffusion models. arXiv preprint arXiv:2512.20003.
+
+    @article{kahouli2025control,
+      title={Control variate score matching for diffusion models},
+      author={Kahouli, Khaled and Elie, Romuald and M{\"u}ller, Klaus-Robert and Berthet, Quentin and Unke, Oliver T and Doucet, Arnaud},
+      journal={arXiv preprint arXiv:2512.20003},
+      year={2025}
+    }
